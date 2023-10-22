@@ -4,8 +4,8 @@
 BlockSim requires `virtualenv` with certain dependencies, see `requirements.txt`.
 ```sh
 pip install virtualenv
-virtualenv -p python venv
-source venv/bin/activate
+virtualenv -p python blocksim
+source blocksim/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -16,11 +16,11 @@ python -m blocksim.blocksim
 ```
 * run training
 ```sh
-python 
+source activate blocksim && python train.py --n_envs 4
 ```
 * run experiments
 ```sh
-python 
+python exp.py --k 1000
 ```
 
 ## Working paper
