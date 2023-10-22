@@ -106,4 +106,4 @@ for a in range(attempts):
                                                 'total_timesteps' : timesteps,
                                                 'filename' : f,
                                                 }, orient='index').T], ignore_index=True)
-        log.to_csv(lf, sep=';', index=False, compression='zip')
+        log.to_csv(lf, sep=';', index=False, compression=None)
