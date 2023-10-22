@@ -29,5 +29,5 @@ python
 
 ## References
 
-* We used BlockSim - a framework for modeling and simulating Blockchain protocols [(Faria & Correia, 2019)](https://static.carlosfaria.pt/file/personal-assets/papers/blocksim-blockchain-simulator.pdf), see [GitHub](https://github.com/carlosfaria94/blocksim).
+* We used BlockSim - a framework for modeling and simulating blockchain protocols [(Faria & Correia, 2019)](https://static.carlosfaria.pt/file/personal-assets/papers/blocksim-blockchain-simulator.pdf), see [GitHub](https://github.com/carlosfaria94/blocksim).
 
