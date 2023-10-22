@@ -1,4 +1,4 @@
-## BlockSim: Blockchain Simulator
+## Sustainable broadcasting in Blockchain Network with Reinforcement Learning
 
 ### Setup
 BlockSim requires `virtualenv` with certain dependencies, see `requirements.txt`.
@@ -15,10 +15,19 @@ pip install -r requirements.txt
 python -m blocksim.blocksim
 ```
 * run training
-
+```sh
+python 
+```
 * run experiments
+```sh
+python 
+```
+
+## Working paper
+
+* Under development
 
 ## References
 
-* We used BlockSim - a framework for modeling and simulate a Blockchain protocol [(Faria & Correia, 2019)](https://static.carlosfaria.pt/file/personal-assets/papers/blocksim-blockchain-simulator.pdf), see [GitHub](https://github.com/carlosfaria94/blocksim).
+* We used BlockSim - a framework for modeling and simulating Blockchain protocols [(Faria & Correia, 2019)](https://static.carlosfaria.pt/file/personal-assets/papers/blocksim-blockchain-simulator.pdf), see [GitHub](https://github.com/carlosfaria94/blocksim).
 
