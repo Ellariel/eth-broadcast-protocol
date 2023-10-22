@@ -3,7 +3,7 @@ import os, argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--type', default='ethereum', type=str)
 parser.add_argument('--duration', default=60, type=int, nargs="+")
-parser.add_argument('--k', default=300, type=int)
+parser.add_argument('--k', default=1000, type=int)
 parser.add_argument('--test', default='PPO-env-1.sav.0.442', type=str)
 
 parser.add_argument('--log', default='#', type=str)
