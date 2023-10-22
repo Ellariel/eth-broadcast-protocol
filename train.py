@@ -12,7 +12,7 @@ parser.add_argument('--epochs', default=1000, type=int)
 parser.add_argument('--timesteps', default=1e4, type=int)
 parser.add_argument('--attempts', default=1000, type=int)
 parser.add_argument('--approach', default='PPO', type=str)
-parser.add_argument('--n_envs', default=16, type=int)
+parser.add_argument('--n_envs', default=4, type=int)
 args = parser.parse_args()
 
 timesteps = args.timesteps
@@ -66,7 +66,7 @@ for a in range(attempts):
     E = make_vec_env(lambda: BlocksimEnv(nodes_dict=base_dict), n_envs=n_envs)
 
     lf = os.path.join(results_dir, f'{file_mask}.log')
-    log = pd.read_csv(lf, sep=';', compression='zip') if os.path.exists(lf) else None
+    log = pd.read_csv(lf, sep=';', compression=None) if os.path.exists(lf) else None
     f = os.path.join(weights_dir, f'{file_mask}.sav')
 
     if approach == 'PPO':
