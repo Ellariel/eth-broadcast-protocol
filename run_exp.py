@@ -1,4 +1,4 @@
-import os, argparse
+import os, argparse, time
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--type', default='ethereum', type=str)
@@ -28,5 +28,7 @@ queue
 '''
     with open(f'./run_exp.sub', 'wt') as file:
         file.writelines(line)
+    time.sleep(1)
     os.system(f'condor_submit ./run_exp.sub')
+    time.sleep(1)
     os.remove('./run_exp.sub')
