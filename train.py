@@ -12,7 +12,7 @@ parser.add_argument('--epochs', default=1000, type=int)
 parser.add_argument('--timesteps', default=1e4, type=int)
 parser.add_argument('--attempts', default=1000, type=int)
 parser.add_argument('--approach', default='PPO', type=str)
-parser.add_argument('--n_envs', default=4, type=int)
+parser.add_argument('--n_envs', default=1, type=int)
 args = parser.parse_args()
 
 timesteps = args.timesteps
