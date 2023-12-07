@@ -8,7 +8,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--type', default='ethereum', type=str)
 parser.add_argument('--duration', default=60, type=int)
 parser.add_argument('--k', default=300, type=int)
-parser.add_argument('--test', default='PPO-env-1.sav.0.442', type=str)
+parser.add_argument('--test', default='PPO-env-1.sav.0.416', type=str) #'PPO-env-1.sav.0.442'
 args = parser.parse_args()
 
 base_dict = {
