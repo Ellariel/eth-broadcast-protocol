@@ -46,7 +46,7 @@ class BlocksimEnv(gym.Env):
         return obs
     
     def exec_sim(self):
-        for i in range(5):
+        for i in range(10):
             try:
                 self.sim = Blocksim(seed=get_random_seed(),
                                     duration=self.sim_duration,
