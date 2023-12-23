@@ -6,6 +6,9 @@ from stable_baselines3.common.env_checker import check_env
 from stable_baselines3 import PPO, A2C, DDPG, TD3, SAC
 from stable_baselines3.common.env_util import make_vec_env
 
+import warnings
+warnings.filterwarnings('ignore')
+
 parser = argparse.ArgumentParser()
 parser.add_argument('--env', default='env', type=str)
 parser.add_argument('--epochs', default=1000, type=int)

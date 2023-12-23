@@ -4,6 +4,9 @@ from tqdm import tqdm
 from blocksim.blocksim import Blocksim
 from utils import get_random_seed, set_random_seed
 
+import warnings
+warnings.filterwarnings('ignore')
+
 parser = argparse.ArgumentParser()
 parser.add_argument('--type', default='ethereum', type=str)
 parser.add_argument('--duration', default=60, type=int)
