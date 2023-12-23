@@ -1,0 +1,9 @@
+simpy==3.0.11
+schema
+numpy==1.20.3
+scipy~=1.3.3
+pysha3
+tqdm
+pandas
+setuptools==57.1.0
+stable-baselines3[extra]
