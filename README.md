@@ -1,12 +1,15 @@
 ## Sustainable broadcasting in Blockchain Network with Reinforcement Learning
 
+## Working paper
+
+* Under development
+
 ### Setup
-BlockSim requires `virtualenv` with certain dependencies, see `requirements.txt`.
+BlockSim requires some virtual environment with certain dependencies, see `requirements.txt`.
 ```sh
-pip install virtualenv
-virtualenv -p python blocksim
-source blocksim/bin/activate
-pip install -r requirements.txt
+conda create -n blocksim python=3.9
+conda activate blocksim
+pip install -r requirements.txt 
 ```
 
 ### Run
@@ -22,10 +25,6 @@ source activate blocksim && python train.py --n_envs 4
 ```sh
 python exp.py --k 1000
 ```
-
-## Working paper
-
-* Under development
 
 ## References
 
