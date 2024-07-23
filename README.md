@@ -1,12 +1,26 @@
 ## Sustainable broadcasting in Blockchain Network with Reinforcement Learning
 
-### Setup
-BlockSim requires `virtualenv` with certain dependencies, see `requirements.txt`.
+## Working paper
+
+Valko, D., & Kudenko, D. (2024). Sustainable broadcasting in Blockchain Network with Reinforcement Learning. arXiv. https://doi.org/10.48550/arXiv.2407.15616
+
 ```sh
-pip install virtualenv
-virtualenv -p python blocksim
-source blocksim/bin/activate
-pip install -r requirements.txt
+@misc{ValkoKudenko2022,
+title={Sustainable broadcasting in Blockchain Network with Reinforcement Learning}, 
+author={Danila Valko and Daniel Kudenko},
+year={2024},
+publisher={arXiv},
+howpublished={arXiv},
+doi = {https://doi.org/10.48550/arXiv.2407.15616},
+}
+```
+
+### Setup
+BlockSim requires some virtual environment with certain dependencies, see `requirements.txt`.
+```sh
+conda create -n blocksim python=3.9
+conda activate blocksim
+pip install -r requirements.txt 
 ```
 
 ### Run
@@ -22,10 +36,6 @@ source activate blocksim && python train.py --n_envs 4
 ```sh
 python exp.py --k 1000
 ```
-
-## Working paper
-
-* Under development
 
 ## References
 
